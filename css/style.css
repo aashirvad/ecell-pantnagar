@@ -1,0 +1,936 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a {
+  font-family: "raleway";
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "raleway";
+  font-weight: 600;
+}
+
+p {
+  font-family: "raleway";
+  font-weight: 500;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#arrow i {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  cursor: pointer;
+  background-color: #00a8b4;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+/*header*/
+
+header {
+  background-color: red;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 200px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  color: #fff;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/img1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#hero_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  padding: 30px 0;
+  transition: all 0.5s ease;
+}
+
+.nav-fixed {
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 2px 2px 10px #bbb;
+}
+
+.nav-fixed h2 {
+  color: #00a8b4 !important;
+}
+
+.nav-fixed .nav ul a {
+  color: #00a8b4;
+}
+
+.menu-par {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav ul li {
+  display: inline-block;
+}
+
+.nav ul a {
+  color: #fff;
+  padding: 10px;
+  position: relative;
+}
+
+.nav ul a:before {
+  content: "s";
+  background-color: #00a8b4;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  height: 2px;
+  font-size: 0px;
+  left: 10px;
+  transition: all 0.5s ease;
+}
+
+.nav ul a:hover:before {
+  width: 74%;
+}
+
+.home_header_info h1 {
+  font-size: 2rem;
+  padding: 20px 0px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.logo-par {
+  width: 60px;
+  height: 60px;
+}
+
+.logo-par a img {
+  width: 100%;
+  height: 100%;
+}
+.home_header_info p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.5rem;
+  line-height: rem;
+  width: 90%;
+  color: #00a8b4;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.home_header_info a {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #00a8b4;
+  text-decoration: none;
+  padding: 17px 45px;
+  margin-top: 25px;
+  display: inline-block;
+  font-size: 1.3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.home_header_info a:hover {
+  color: #fff;
+  background-color: #00a8b4;
+}
+
+.toggle-btn {
+  display: none;
+  color: #fff;
+}
+
+/*welcome Sec Css*/
+
+section#welcome_Sec {
+  text-align: center;
+  padding: 100px 0px;
+}
+
+section#welcome_Sec h2 {
+  color: #00a8b4;
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-family: "Lora", serif;
+  padding-bottom: 12px;
+  margin-bottom: 1.5rem;
+}
+.About_description {
+  font-size: 1.5rem;
+  color: rgb(61, 61, 61);
+  opacity: 0.4;
+  font-weight: 600;
+  line-height: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+
+/*explore sec*/
+
+#explore-fiji {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/img2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0px;
+  color: #fff;
+}
+.event_subtile,
+.event_heading {
+  display: block;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: "Lora", serif;
+}
+.event_heading {
+  font-size: 1.7rem;
+  color: #00a8b4;
+}
+.event_subtile {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.event_description {
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #494949;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.event_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.events_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+.event_icon {
+  font-size: 3.5rem;
+  color: #00a8b4;
+}
+.event_name {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.event__description {
+  text-align: justify;
+  font-size: 1.5rem;
+  color: #494949;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*gallery*/
+
+section#gallery {
+  padding: 100px 0px;
+}
+
+.gallery_heading {
+  font-size: 1.7rem;
+  color: #00a8b4;
+  display: block;
+  font-family: "Lora", serif;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.gallery_description {
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #494949;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+section#slides_parent {
+  padding-bottom: 150px;
+}
+
+.slides {
+  display: flex;
+  justify-content: center;
+}
+
+.slides h4 {
+  color: #444;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.slide_1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../ecell/img1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  min-width: 60px;
+  height: 300px;
+  border-radius: 40px;
+  margin: 0 15px;
+  position: relative;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.slide_1:hover {
+  min-width: 350px;
+}
+
+.slide_1:hover .slide_info {
+  transform: rotate(0deg);
+  left: 20px;
+  bottom: 20px;
+  font-size: 22px;
+}
+
+.slide_2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../ecell/img2.webp);
+}
+
+.slide_3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../ecell/img3.webp);
+}
+
+.slide_4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../ecell/img4.jpg);
+}
+
+.slide_5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../ecell/img5.webp);
+}
+
+.slide_6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../ecell/img6.webp);
+}
+
+.slide_8 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../ecell/img7.webp);
+}
+.slide_9 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../ecell/img8.webp);
+}
+.slide_10 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../ecell/img9.jpg);
+}
+.slide_11 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../ecell/img10.jpg);
+}
+
+.slide_info {
+  position: absolute;
+  bottom: 51px;
+  color: #ffff;
+  transform: rotate(-90deg);
+  right: 0px;
+  font-weight: 700;
+  font-size: 12px;
+}
+/*========================={gallery}=========================*/
+
+/*holyday-fiji*/
+
+#fiji-holyday {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/img3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0px;
+}
+
+.slider_heading {
+  font-size: 1.7rem;
+  color: #00a8b4;
+  display: block;
+  font-family: "Lora", serif;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.card_image {
+  width: 240px;
+  height: 300px;
+}
+.card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.swiper {
+  width: 100%;
+}
+/*blog*/
+#footer_section {
+  padding: 100px 0;
+  background: #111111;
+}
+
+/*footer*/
+.footer_section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid: 3rem;
+}
+
+.footer_img {
+  width: 100px;
+  display: block;
+  height: 100px;
+}
+.footer_logo {
+  color: #fff;
+}
+.footer_img img {
+  width: 100%;
+  height: 100%;
+}
+.links {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid: 3rem;
+  justify-items: center;
+}
+
+.followus {
+  color: #fff;
+  font-family: "Lora", serif;
+  font-size: 1.6rem;
+  color: #00a8b4;
+  margin-bottom: 1rem;
+}
+.links a {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.links a:hover {
+  color: #00a8b4;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .home_header_info a {
+    color: #00a8b4;
+    padding: 15px 40px;
+    margin-top: 25px;
+    font-size: 1.3rem;
+  }
+  .home_header_info p {
+    font-size: 2.4rem;
+    width: 100%;
+  }
+  section#welcome_Sec {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .About_description {
+    font-size: 1.3rem;
+  }
+  section#welcome_Sec h2 {
+    font-size: 1.8rem;
+  }
+  #explore-fiji {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .event_subtile {
+    font-size: 2.4rem;
+    color: #fff;
+  }
+  .event_description {
+    font-size: 1.4rem;
+  }
+  .event_grid {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    gap: 2.4rem;
+  }
+
+  .event_icon {
+    font-size: 3rem;
+  }
+  .event_name {
+    font-size: 1.2rem;
+  }
+  .event__description {
+    font-size: 1.2rem;
+  }
+  /*========================={gallery}=========================*/
+
+  section#gallery {
+    padding: 100px 0px;
+  }
+
+  .gallery_heading {
+    font-size: 1.5rem;
+  }
+  .gallery_description {
+    font-size: 1.3rem;
+  }
+
+  section#slides_parent {
+    /* padding-left: 2.5rem; */
+    /* padding-right: 2.5rem; */
+    padding-bottom: 150px;
+  }
+
+  .slides {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slide_1 {
+    width: 50px;
+    min-width: 50px;
+  }
+
+  .slide_1:hover {
+    min-width: 250px;
+  }
+
+  /*========================={gallery}=========================*/
+
+  /*========================={slider}=========================*/
+
+  #fiji-holyday {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .slider_heading {
+    font-size: 1.6rem;
+  }
+
+  .card_image {
+    width: 240px;
+    height: 280px;
+  }
+  /*========================={footer}=========================*/
+  .footer_section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    grid: 2rem;
+  }
+
+  .footer_img {
+    width: 80px;
+    height: 80px;
+  }
+  .footer_logo {
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  .footer_img img {
+    width: 100%;
+    height: 100%;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid: 3rem;
+    justify-items: center;
+  }
+
+  .followus {
+    color: #fff;
+    font-family: "Lora", serif;
+    font-size: 1.4rem;
+    color: #00a8b4;
+    margin-bottom: 1rem;
+  }
+  .links a {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1rem;
+  }
+  .links a:hover {
+    color: #00a8b4;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    transition: all 0.5s ease;
+  }
+
+  .nav-active {
+    left: 0;
+  }
+  .toggle-btn i {
+    color: #00a8b4;
+    font-size: 2rem;
+  }
+
+  .toggle-btn i.nav-active:before {
+    content: "\f00d";
+    color: #00a8b4;
+  }
+
+  .nav ul li {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .nav ul {
+    margin-top: 100px;
+  }
+
+  .toggle-btn {
+    display: block;
+    z-index: 1;
+  }
+
+  .home_header_info h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  section#welcome_Sec h2 {
+    font-size: 21px;
+  }
+
+  section#welcome_Sec p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #777;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  .slides {
+    flex-direction: column;
+  }
+
+  .slide_1 {
+    width: 90%;
+    min-width: 90%;
+    height: 240px;
+    margin: 20px 15px;
+  }
+
+  header {
+    padding: 0 40px;
+  }
+
+  section#welcome_Sec h2 {
+    font-size: 18px;
+  }
+
+  section#slides_parent {
+    padding-bottom: 50px;
+  }
+
+  .slide_info {
+    bottom: 21px;
+    transform: rotate(0deg);
+    left: 20px;
+    font-size: 19px;
+  }
+
+  /*========================={custom}=========================*/
+  .home_header_info a {
+    color: #00a8b4;
+    padding: 11px 30px;
+    margin-top: 25px;
+    font-size: 1.1rem;
+  }
+  .home_header_info p {
+    font-size: 2.1rem;
+    width: 100%;
+  }
+  section#welcome_Sec {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .About_description {
+    font-size: 1.3rem;
+  }
+  section#welcome_Sec h2 {
+    font-size: 1.8rem;
+  }
+  #explore-fiji {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .event_subtile {
+    font-size: 2.4rem;
+    color: #fff;
+  }
+  .event_description {
+    font-size: 1.4rem;
+  }
+
+  .event_grid {
+    /* padding-left: 2.5rem; */
+    /* padding-right: 2.5rem; */
+    gap: 2.5rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .events_box {
+    margin: 1rem;
+  }
+  .event_icon {
+    font-size: 3rem;
+  }
+  .event_name {
+    font-size: 1.2rem;
+  }
+  .event__description {
+    font-size: 1.2rem;
+  }
+  /*========================={gallery}=========================*/
+
+  section#gallery {
+    padding: 100px 0px;
+  }
+
+  .gallery_heading {
+    font-size: 1.5rem;
+  }
+  .gallery_description {
+    font-size: 1.3rem;
+  }
+
+  /*========================={gallery}=========================*/
+
+  /*========================={slider}=========================*/
+
+  #fiji-holyday {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .slider_heading {
+    font-size: 1.6rem;
+  }
+
+  .card_image {
+    width: 180px;
+    height: 120px;
+  }
+  .swiper {
+    width: 90%;
+  }
+
+  /*========================={footer}=========================*/
+  .footer_section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .footer_img {
+    width: 80px;
+    height: 80px;
+  }
+  .footer_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  .footer_img img {
+    width: 100%;
+    height: 100%;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid: 3rem;
+    justify-items: center;
+  }
+
+  .followus {
+    color: #fff;
+    font-family: "Lora", serif;
+    font-size: 1.4rem;
+    color: #00a8b4;
+    margin-bottom: 1rem;
+  }
+  .links a {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1rem;
+  }
+  .links a:hover {
+    color: #00a8b4;
+  }
+  .slide_1 {
+    object-fit: cover;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+  }
+  /*========================={custom}=========================*/
+}
+
+@media screen and (max-width: 425px) {
+  .card_image {
+    padding-left: 1.5rem;
+  }
+  section#welcome_Sec {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .About_description {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  #explore-fiji {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .event-heading {
+    font-size: 1.3rem;
+  }
+  .event_subtile {
+    font-size: 2rem;
+    color: #fff;
+  }
+  .event_description {
+    font-size: 1.1rem;
+  }
+
+  .event_grid {
+    gap: 2.5rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .events_box {
+    margin: 1rem;
+  }
+  .event_icon {
+    font-size: 3rem;
+  }
+  .event_name {
+    font-size: 0.9rem;
+  }
+  .event__description {
+    font-size: 1rem;
+  }
+  .gallery_heading {
+    font-size: 1.3rem;
+  }
+  .gallery_description {
+    font-size: 1.1rem;
+  }
+}
+
+/*========================={loader}=========================*/
+.copyright {
+  padding-bottom: 3rem;
+  text-align: center;
+  background: #111111;
+  font-size: 0.9rem;
+}
+.copyright span {
+  color: #fefefe;
+}
+.copyright .robin {
+  color: #ffd700;
+  text-decoration: none;
+}
