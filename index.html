@@ -39,24 +39,27 @@
 
     <nav>
       <div class="container">
-        <div class="menu-par">
-          <div class="logo-par">
-            <a href="index.html">
-              <img src="images/logo.png" alt="" />
-            </a>
-          </div>
-          <div class="nav">
-            <ul>
-              <li><a class="menu_hover" href="index.html">Home</a></li>
-              <li><a class="menu_hover" href="#welcome_Sec">About</a></li>
-              <li><a class="menu_hover" href="#explore-fiji">Events</a></li>
-              <li><a class="menu_hover" href="#gallery">Gallery</a></li>
-            </ul>
-          </div>
-          <div class="toggle-btn">
-            <i class="fa fa-bars"></i>
-          </div>
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="#index.html">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
         </div>
+        
+        <button class="openbtn" onclick="openNav()">☰</button>  
+        
+        
+        <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        </script>
       </div>
     </nav>
 
@@ -80,18 +83,7 @@
           <span>ABOUT US</span>
         </h2>
         <p data-aos="fade-up" class="About_description">
-          E-Cell or the Entrepreneurship-Cell is a student body aimed at
-          developing a start-up culture in the G.B. Pant University of
-          Agriculture and Technology,Pantnagar. It focuses on spreading
-          awareness about entrepreneurship among students and helping them in
-          establishing their own start-up journey by providing them a proper
-          platform to interact with incubators, seeding funds and investors. It
-          also aims at increasing job opportunities andplacements in the
-          university and grooming skills of students throughout the university,
-          from the very first year. This plan will be achieved by organizing
-          various workshops, mentorship programmes and competitions thus helping
-          them develop and hone their skills and knowledge required for
-          establishing start-ups and or securing placements.
+          Entrepreneurship Development Cell, established in 2018 is a student body aimed at developing a satrt-up culture in the G.B. Pant University of Agriculture and Technology,Pantnagar. It focuses on spreading awareness about entrepreneurship among students and helping them in establishing their own start-up journey by providing them a proper platorm to interact with incubators, seeding funds and investors. It also aims at increasing job opportunities and placements in the university and grooming skills of students throughout the university, from the very first year. This plan will be achieved by organizing various workshops, mentorship programmes and competitions thus helping them develop and hone their skills and knowledge required for establishing start-ups and/or securing placements.
         </p>
       </div>
     </section>
@@ -99,8 +91,9 @@
     <section id="explore-fiji">
       <div class="container">
         <div class="events">
-          <h2 data-aos="fade-up" class="event_heading">EVENTS</h2>
-          <h2 data-aos="fade-up" class="event_subtile">What We Do</h2>
+          <h2 data-aos="fade-up" class="event_subtile">FOOTPRINTS' 24</h2>
+          <h2 data-aos="fade-up" class="event_heading">The Annual Business Fest</h2>
+          
           <h1 data-aos="fade-up" class="event_description">
             The E-cell will organize various events in the university, involving
             students from all colleges, thus spreading awareness and helping

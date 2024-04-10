@@ -21,3 +21,4 @@ var swiper = new Swiper(".blogs-slider", {
 });
 
 document.addEventListener("contextmenu", (event) => event.preventDefault());
+

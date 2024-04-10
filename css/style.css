@@ -76,14 +76,60 @@ header {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/img1.jpg);
+  background-image: linear-gradient(rgb(0 0 0 / 12%), rgb(0 0 0 / 0%)), url(../images/background.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 1000px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  margin:right;
+}
 
+
+.sidepanel a  {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
 .img {
   position: absolute;
   left: 0;
@@ -102,15 +148,16 @@ header {
 nav {
   position: fixed;
   z-index: 99;
-  width: 100%;
-  padding: 30px 0;
+  width: 0%;
+ 
   transition: all 0.5s ease;
+  padding: 1% 1%;
 }
 
 .nav-fixed {
-  background-color: #fff;
+  background-color: #ffffff00;
   padding: 10px 0;
-  box-shadow: 2px 2px 10px #bbb;
+  ;
 }
 
 .nav-fixed h2 {
@@ -256,6 +303,7 @@ section#welcome_Sec h2 {
   color: #fff;
 }
 
+/*  doesnot work*/
 .event_description {
   display: inline-block;
   font-size: 1.7rem;
