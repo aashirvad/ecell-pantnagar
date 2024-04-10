@@ -16,7 +16,20 @@ html {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
+  text-align: center;
+  color: white;
 }
+/* see you later
+.top-right {
+  position: absolute;
+  top: 2px;
+  right: 1px;
+  width: 60px;
+  height:60px;
+}
+*/
+
 
 a {
   font-family: "raleway";
@@ -151,7 +164,11 @@ nav {
   width: 0%;
  
   transition: all 0.5s ease;
-  padding: 1% 1%;
+  padding: 2% 0.5%;
+}
+nav img{
+  width: 30px;
+  
 }
 
 .nav-fixed {
@@ -229,8 +246,8 @@ nav {
 
 .home_header_info a {
   background-color: transparent;
-  border: 2px solid #fff;
-  color: #00a8b4;
+  border: 2px solid #f4ff2c;
+  color: #f4ff2c;
   text-decoration: none;
   padding: 17px 45px;
   margin-top: 25px;
@@ -241,8 +258,8 @@ nav {
 }
 
 .home_header_info a:hover {
-  color: #fff;
-  background-color: #00a8b4;
+  color: #000000;
+  background-color: #f4ff2c;
 }
 
 .toggle-btn {
@@ -458,12 +475,124 @@ section#slides_parent {
   font-size: 12px;
 }
 /*========================={gallery}=========================*/
+/*explore sec*/
+
+#explore-goa {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/img4.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0px;
+  color: #fff;
+}
+.team_subtile,
+.team_heading {
+  display: block;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: "Lora", serif;
+}
+.team_heading {
+  font-size: 1.7rem;
+  color: #00a8b4;
+}
+.team_subtile {
+  font-size: 3rem;
+  color: #fff;
+}
+
+html { 
+  box-sizing: border-box; 
+} 
+
+/* Body width fixing */
+body { 
+  max-width: 100%; 
+} 
+
+/* Box sizing depending on parent */
+*, 
+*:before, 
+*:after { 
+  box-sizing: inherit; 
+} 
+
+/* Styling column */
+.column { 
+  float: left; 
+  width: 33%; 
+  margin-bottom: 16px; 
+  padding: 2px 10px; 
+} 
+
+/* Column width change depends 
+  on screen size */
+@media screen and (max-width: 670px) { 
+  .column { 
+    width: 100%; 
+    text-align: none; 
+  } 
+} 
+
+/* Card designing */
+.card { 
+  background-color: rgba(255, 255, 255, 0); 
+  border: 1px solid rgb(215, 0, 0); 
+} 
+
+.container { 
+  padding: 0 16px; 
+} 
+
+/* Icon styling */
+.fa { 
+  margin: 10px; 
+  font-size: 68px; 
+} 
+
+.fa:hover { 
+  transform: rotateY(180deg); 
+  transition: transform 0.8s; 
+} 
+
+.container::after, 
+.row::after { 
+  content: ""; 
+  clear: both; 
+  display: table; 
+} 
+
+/* Button designing */
+.button { 
+  border: none; 
+  padding: 8px; 
+  color: white; 
+  background-color: #449D44; 
+  text-align: center; 
+  cursor: pointer; 
+  width: 100%; 
+  margin-bottom: 10px; 
+} 
+
+/* Hover effect on button */
+.button:hover { 
+  background-color: green; 
+} 
+
+/* Margin first member of team */
+#gfg { 
+  float: none; 
+  margin: auto; 
+} 
+
+
 
 /*holyday-fiji*/
 
 #fiji-holyday {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(../images/img3.jpg);
+  
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -548,7 +677,7 @@ section#slides_parent {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .home_header_info a {
-    color: #00a8b4;
+    color: #f4ff2c;
     padding: 15px 40px;
     margin-top: 25px;
     font-size: 1.3rem;
